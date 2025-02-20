@@ -1,0 +1,92 @@
+*{
+    
+    margin: 0%;
+    padding: 0%; 
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+   
+}
+h1 {
+    margin-top: 2rem !important;
+    font-size: x-large;
+}
+
+.nav-bar {
+    grid-column: 1/11;
+    height: 12vh;
+    background-color:#080808;
+    color: white;
+}
+
+.body{
+    display: grid;
+    grid-column: 1/11;
+    height:44vh;
+    background-color:aqua;color: rgb(10, 10, 10);
+}
+.image-me img{ 
+    width: 30%;
+    height: 150%;
+    border-radius: 30%;
+    margin:5% 0% 0% 10%;
+   
+    background: url(asasa);
+    border-radius: 2705px;
+}
+
+nav ul li{
+    list-style: absolute;
+    display: inline-block;
+    margin-inline: 45px;
+    line-height: 35px;
+    float: right;color:rgb(10, 10, 10);
+    
+}
+
+@media only screen and (max-width: 700px){
+    h1 {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    h1 {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    h1 {
+        font-size: large;
+        bottom: 20px;
+    }
+
+    nav ul li{
+        list-style: absolute;
+        display: inline-block;
+        margin-inline: 0px;
+        line-height: 35px;
+        float: right;color:rgb(10, 10, 10);
+        
+    }
+
+    .body{
+        display: grid;
+        grid-column: 1/11;
+        height:50vh;
+        background-color:aqua;color: rgb(10, 10, 10);
+    }
+
+    .image-me img{ 
+        width: 30%;
+        height: 50%;
+        border-radius: 30%;
+        margin:5% 0% 0% 10%;
+       
+        background: url(asasa);
+        border-radius: 2705px;
+    }
+}
